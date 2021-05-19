@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .fl{
+      float: left;
+    }
+    .fr{
+      float: right;
+    }
+    .main{
+      display: flex;
+      width: 250px;
+    }
+    .text{
+      overflow: hidden;
+      text-overflow: ellipsis;/*超出文本的样式*/
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <!-- 文本信息 -->
+    <div class="fl text">超级多的文本超级多的文本超级多的文AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA本超级多的文本超级多的文本超级多的文本超级多的文aaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAA本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本</div>
+    <div class=""></div>
+  </div>
+  <script >
+    let testContent=`超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本超级多的文本`
+  </script>
+</body>
+</html>
